@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    background-color: grey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+    
+    color: white;
+}
+  
+  header {
+    
+    background-color:blue;
+    color: #fff;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .brand-logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: black;
+    border: 20px solid dotted white ;
+    border-radius: 40px ;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+  }
+  
+  .navbar .brand-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:grey;
+    text-align: center;
+  }
+  
+  section {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+  
+  input, textarea, button {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+ /* Footer Styles */
+footer {
+  background-color:blue;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+}
+
+.social-icons {
+  margin-top: 1em;
+}
+
+.social-icons a {
+  color:white;
+  text-decoration: none;
+  margin: 0 1em;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff5722; /* Change to any highlight color of your choice */
+}
+
+
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 1em;
+      border-radius: 5px;
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show nav links when active */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger menu on small screens */
+    }
+  }
+  
